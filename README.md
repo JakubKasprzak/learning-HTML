@@ -164,7 +164,29 @@ Selektor złożony
 #news #lead .lead-container p.wazny {color : blue; }
 ```
 
-##Kaskadowość CSS
+##Specyficzność CSS
+```html
+inline > <head> > .css 
+#identyfikator > .klasa > tag
+```
+##Box model
+- el. liniowe - box jest wielkości tekstu
+- el. blokowe - box jest maksymalnej szerokości ograniczony kontenerem nadrzędnym
+- height x width - wielkość kontenera
+- padding - odległość od krawędzi kontenera
+- border - ramka
+- margin - odstęp kontenera od innych elementów, marginesy nakładają się na siebie,
+czyli jako odległość zostaje przyjęty większy margines. Może być ujemny.
+- total = content + padding + border + margin
+- można zmienić tę właściwość na total = content + padding + border:
+```html
+box-sizing: border-box
+```
+- margin: 20px auto -> box będzie na środku kontenera
+
+
+
+
 
 
 
